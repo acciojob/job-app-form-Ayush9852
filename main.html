@@ -4,10 +4,67 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<title>Job Application Form</title>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
+	<form method="post" id="jobApplicationForm">
+		<!-- Name -->
+		<label for="name">Name*:</label>
+		<input id="name" type="text" name="name" required>
+		<br>
+		
+		<!--Email-->
+		<label for="email">Email*:</label>
+		<input id="email" type="email" name="email" required>
+
+		<br>
+
+		<!--Gender-->
+		<label>Gender*:</label>
+		<input type="radio" name="Gender" id="male" value="male" required>
+		<label id="male">Male</label>
+		<input type="radio" name="Gender" id="female" value="female" required>
+		<label id="female">Female</label>
+		<input type="radio" name="Gender" id="other" value="other" required>
+		<label id="other">Other</label>
+		<br>
+		
+		<!--Laptop Brands-->
+		<label for="laptop">Laptop Brands:</label>
+		<select id="laptop" name="laptop">
+			<option id="Apple">Apple</option>
+			<option id="Asus">Asus</option>
+			<option id="HP">HP</option>
+		</select>
+		<br>
+		
+		<!--Age-->
+		<label for="age">Age*:</label>
+		<input id="age" type="number" name="age" required>
+		<br>
+		
+		<!--Date Of Birth-->
+		<label for="dob">Date of Birth*:</label>
+		<input id="dob" type="date" name="dob" required>
+		<br>
+		
+		<!--Password-->
+		<label for="password">Password*:</label>
+		<input id="password" type="password" name="password" required>
+		<br>
+		
+		<!--Portfolio URL-->
+		<label for="portfolio">Portfolio URL*:</label>
+		<input id="portfolio" type="url" name="portfolio">
+		<br>
+		
+		<!--Submit Button-->
+		<button type="submit">Submit</button>
+
+		
+	</form>
     <script type="text/javascript" src="./script.js">
 </script>
 
